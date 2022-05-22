@@ -1,5 +1,6 @@
 #!/bin/bash
-source ./conf
+# There is no source command in /bin/sh in ubuntu.
+. ../input_files/conf
 peptide_design=$peptide_design_dir
 
 bin=../1_makePeptideBin/*bin

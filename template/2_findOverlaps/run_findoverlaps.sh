@@ -1,5 +1,6 @@
 #!/bin/bash
-source ./conf
+# There is no source command in /bin/sh in ubuntu.
+. ../input_files/conf
 peptide_design=$peptide_design_dir
 
 worker=$1
@@ -12,7 +13,7 @@ deviation=1.0
 minCosAngle=0.5
 batchSize=10000
 
-out=$dir/overlaps
+out=$dir/overlaps$1
 
 #make a directory for the output, if it doesn't already exist
 if [ ! -d $dir ]; then
