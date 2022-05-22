@@ -1,9 +1,9 @@
 #!/bin/bash
 source ./conf
 peptide_design=$peptide_design_dir
-target=../input_files/1YCR_A__.pdb
-complex=../input_files/1YCR.pdb
-peptide=B
+target=../input_files/${PDBID}_${t_chain}__.pdb
+complex=../input_files/${PDBID}.pdb
+peptide=${p_chain}
 structures=../5_buildPeptideRMSDMatrix/1_makePeptideBin
 out=scores
 config=../input_files/multichainDB.configfile

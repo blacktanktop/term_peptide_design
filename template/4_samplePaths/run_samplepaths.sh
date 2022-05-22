@@ -2,14 +2,14 @@
 source ./conf
 peptide_design=$peptide_design_dir
 
-targetPDB=../input_files/1YCR.pdb
-peptideChainID=B
+targetPDB=../input_files/${PDBID}.pdb
+peptideChainID=${p_chain}
 seedBin=../1_generateSeeds/output/extendedfragments.bin
-seedGraph=../3_buildSeedGraph/1YCR_seedGraph.adj
+seedGraph=../3_buildSeedGraph/${PDBID}_seedGraph.adj
 numPaths=500
 minLength=13
 config=../input_files/singlechainDB.configfile
-base=1YCR
+base=$PDBID
 
 SECONDS=0
 

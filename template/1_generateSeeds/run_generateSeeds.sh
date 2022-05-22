@@ -2,8 +2,8 @@
 source ./conf
 peptide_design=$peptide_design_dir
 
-targetPDB=../input_files/1YCR.pdb
-peptideChainID=B
+targetPDB=../input_files/${PDBID}.pdb
+peptideChainID=${p_chain}
 paramsFile=genSeeds.params
 
 SECONDS=0

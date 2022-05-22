@@ -3,7 +3,7 @@ source ./conf
 peptide_design=$peptide_design_dir
 
 seedBin=../1_generateSeeds/output/extendedfragments.bin
-out="1YCR_seedGraph.adj"
+out=${PDBID}_seedGraph.adj
 overlaps=../2_findOverlaps/output
 
 SECONDS=0
