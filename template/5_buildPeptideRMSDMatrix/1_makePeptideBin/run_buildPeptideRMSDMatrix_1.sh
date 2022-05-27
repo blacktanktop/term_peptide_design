@@ -4,8 +4,8 @@
 peptide_design=$peptide_design_dir
 
 # get a list of all peptide structures
-ls ../../4_samplePaths/path_structures/*_fused-path_*.pdb > peptideStructures.list
-list=peptideStructures.list
+ls ../../4_samplePaths/path_structures/*_fused-path_*.pdb > structures.list
+list=structures.list
 
 SECONDS=0
 
