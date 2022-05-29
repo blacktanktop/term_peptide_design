@@ -8,4 +8,5 @@ RUN cd Mosaist && make
 RUN cd ../
 RUN wget https://github.com/mittinatten/freesasa/releases/download/2.0.3/freesasa-2.0.3.tar.gz && tar -zxvf freesasa-2.0.3.tar.gz
 RUN cd freesasa-2.0.3 && ./configure --disable-threads --disable-xml --disable-json && make all
-RUN git clone git@github.com:blacktanktop/term_peptide_design.git
+ADD https://api.github.com/repos/blacktanktop/term_peptide_design/git/refs/heads/dev version.json
+RUN git clone -b dev https://github.com/blacktanktop/term_peptide_design.git
