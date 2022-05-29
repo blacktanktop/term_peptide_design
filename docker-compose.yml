@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  design:
+    build: .
+    platform: linux/amd64
+    volumes:
+      - ./:/design
