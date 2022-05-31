@@ -1,0 +1,5 @@
+peptide_design_dir=/path/to/term_peptide_design
+PDBID=1YCR
+t_chain=A
+p_chain=B
+rosetta=/path/to/giRosetta_3.X/main/source/bin
